@@ -1,0 +1,730 @@
+/* ===== 全局设置 ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    "Microsoft YaHei",
+    "PingFang SC",
+    sans-serif;
+
+    background:linear-gradient(
+            135deg,
+            #e0f7ff,
+            #ffffff);
+
+    overflow-x:hidden;
+
+}
+
+
+/* ===== 页面 ===== */
+
+.page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+
+/* ===== 标题 ===== */
+
+h1{
+
+    font-size:55px;
+
+    color:#2c3e50;
+
+    margin-bottom:30px;
+
+}
+
+
+h2{
+
+    margin-top:20px;
+
+    color:#444;
+
+}
+
+
+/* ===== 封面 ===== */
+
+.cover{
+
+    background:linear-gradient(
+            135deg,
+            #ffeef7,
+            #dff8ff);
+
+}
+
+
+.cover h1{
+
+    font-size:70px;
+
+    color:#ff6fa1;
+
+}
+
+
+.cover h2{
+
+    color:#3498db;
+
+}
+
+
+
+/* ===== 按钮 ===== */
+
+button{
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ffb347;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+    background:#ff9f1c;
+
+}
+
+
+/* ===== 学习目标卡片 ===== */
+
+.card{
+
+    width:500px;
+
+    background:white;
+
+    margin:15px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    box-shadow:
+            0 8px 20px rgba(0,0,0,.15);
+
+    font-size:26px;
+
+    transition:.4s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+/* ===== 猜一猜 ===== */
+
+.guess-container{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+.guess-card{
+
+    width:200px;
+
+    height:200px;
+
+    background:white;
+
+    border-radius:30px;
+
+    font-size:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:
+            0 10px 20px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+
+.guess-card:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+/* ===== 导航 ===== */
+
+.season-nav{
+
+    display:flex;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.season-nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:32px;
+
+    padding:25px 40px;
+
+    border-radius:30px;
+
+    background:#66cdaa;
+
+    transition:.4s;
+
+}
+
+
+.season-nav a:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* ===== 四季背景 ===== */
+
+.spring{
+
+    background:
+            linear-gradient(
+                    #ffe6f0,
+                    #fffef5);
+
+}
+
+
+.summer{
+
+    background:
+            linear-gradient(
+                    #e0fff0,
+                    #b7f0ff);
+
+}
+
+
+.autumn{
+
+    background:
+            linear-gradient(
+                    #fff3d1,
+                    #ffe0b3);
+
+}
+
+
+.winter{
+
+    background:
+            linear-gradient(
+                    #dff5ff,
+                    #f8fdff);
+
+}
+
+
+
+/* ===== 图片 ===== */
+
+.picture{
+
+    font-size:100px;
+
+    margin:40px;
+
+    animation:
+            floating 3s infinite ease-in-out;
+
+}
+
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+/* ===== 生字学习 ===== */
+
+.character-grid{
+
+    display:grid;
+
+    grid-template-columns:
+            repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    width:90%;
+
+}
+
+
+.character-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:
+            0 10px 20px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+
+.character-card:hover{
+
+    transform:
+            scale(1.08);
+
+}
+
+
+.character-card h2{
+
+    font-size:60px;
+
+    color:#ff8c00;
+
+}
+
+
+
+/* ===== 闯关 ===== */
+
+.level-card{
+
+    background:white;
+
+    width:450px;
+
+    padding:35px;
+
+    margin:20px;
+
+    border-radius:30px;
+
+    box-shadow:
+            0 8px 18px rgba(0,0,0,.15);
+
+}
+
+
+/* ===== 奖章 ===== */
+
+.medal-container{
+
+    display:flex;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+.medal{
+
+    width:250px;
+
+    height:250px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:80px;
+
+    color:white;
+
+    animation:
+            shine 2s infinite;
+
+}
+
+
+.bronze{
+
+    background:#cd7f32;
+
+}
+
+
+.silver{
+
+    background:#c0c0c0;
+
+}
+
+
+.gold{
+
+    background:#ffd700;
+
+}
+
+
+@keyframes shine{
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+}
+
+
+/* ===== 拓展任务 ===== */
+
+.task-card{
+
+    width:700px;
+
+    background:white;
+
+    margin:20px;
+
+    padding:30px;
+
+    border-radius:30px;
+
+    box-shadow:
+            0 8px 18px rgba(0,0,0,.15);
+
+    font-size:28px;
+
+}
+
+
+
+/* ===== 积分栏 ===== */
+
+.score-board{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    z-index:1000;
+
+    background:white;
+
+    padding:18px 30px;
+
+    border-radius:50px;
+
+    font-size:28px;
+
+    color:#ff9800;
+
+    box-shadow:
+            0 5px 15px rgba(0,0,0,.2);
+
+}
+
+
+
+/* ===== 春天花瓣动画 ===== */
+
+.spring::before{
+
+    content:"🌸 🌸 🌸";
+
+    position:absolute;
+
+    font-size:40px;
+
+    animation:
+            sakura 8s linear infinite;
+
+}
+
+
+@keyframes sakura{
+
+    from{
+
+        top:-50px;
+
+        left:10%;
+
+    }
+
+    to{
+
+        top:100%;
+
+        left:80%;
+
+    }
+
+}
+
+
+
+/* ===== 秋天落叶 ===== */
+
+.autumn::before{
+
+    content:"🍂 🍁 🍂";
+
+    position:absolute;
+
+    font-size:40px;
+
+    animation:
+            leaf 9s linear infinite;
+
+}
+
+
+@keyframes leaf{
+
+    from{
+
+        top:-40px;
+
+        left:90%;
+
+    }
+
+    to{
+
+        top:100%;
+
+        left:20%;
+
+    }
+
+}
+
+
+
+/* ===== 冬天雪花 ===== */
+
+.winter::before{
+
+    content:"❄️ ❄️ ❄️";
+
+    position:absolute;
+
+    font-size:40px;
+
+    animation:
+            snow 7s linear infinite;
+
+}
+
+
+@keyframes snow{
+
+    from{
+
+        top:-50px;
+
+        left:50%;
+
+    }
+
+    to{
+
+        top:100%;
+
+        left:40%;
+
+    }
+
+}
+
+
+
+/* ===== 夏天荷塘气泡 ===== */
+
+.summer::before{
+
+    content:"🫧 🫧 🫧";
+
+    position:absolute;
+
+    font-size:35px;
+
+    animation:
+            bubble 5s linear infinite;
+
+}
+
+
+@keyframes bubble{
+
+    from{
+
+        bottom:0;
+
+        left:40%;
+
+    }
+
+    to{
+
+        bottom:100%;
+
+        left:60%;
+
+    }
+
+}
+
+
+
+/* ===== 总结页 ===== */
+
+.end{
+
+    background:
+            linear-gradient(
+                    #fff8d9,
+                    #ffeef7);
+
+}
+
+
+
+/* ===== 手机适配 ===== */
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:40px;
+
+    }
+
+    .card{
+
+        width:95%;
+
+    }
+
+    .task-card{
+
+        width:95%;
+
+    }
+
+    .level-card{
+
+        width:95%;
+
+    }
+
+    .guess-card{
+
+        width:150px;
+
+        height:150px;
+
+        font-size:28px;
+
+    }
+
+}
